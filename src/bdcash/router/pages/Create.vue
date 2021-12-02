@@ -27,7 +27,7 @@ export default {
       password: '',
       wallet: {},
       passwordrepeat: '',
-      scrypta: window.ScryptaCore,
+      bdcash: window.BDCashCore,
       axios: axios,
       localStorage: window.localStorage
     }
@@ -37,10 +37,10 @@ export default {
       const app = this
       if(app.password === app.passwordrepeat){
         if(app.wallet[app.label] === undefined){
-          window.ScryptaCore.createAddress(app.password,false).then(async response => {
+          window.BDCashCore.createAddress(app.password,false).then(async response => {
             app.wallet[app.label] = response.walletstore
             let exp = response.walletstore.split(':')
-            let node = await this.scrypta.connectNode();
+            let node = await this.bdcash.connectNode();
             app.axios.post(node + '/init', {address: exp[0]})
             app.localStorage.setItem('$LYRA_ids', JSON.stringify(app.wallet) );
             app.localStorage.setItem('$LYRA_lastid', app.label );

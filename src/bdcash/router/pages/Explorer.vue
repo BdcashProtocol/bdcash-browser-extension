@@ -32,7 +32,7 @@ export default {
         {
           name: 'Me',
           description: 'Connect third party identities.',
-          link: 'me.scrypta.id'
+          link: 'me.bdcash.id'
         },
         {
           name: 'Planum',
@@ -47,7 +47,7 @@ export default {
         {
           name: 'News',
           description: 'Decentralized News Feed.',
-          link: 'news.scryptachain.org'
+          link: 'news.bdcashchain.org'
         }
       ]
     }

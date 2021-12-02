@@ -2,7 +2,7 @@
   <div id="welcomepage">
     <img style="margin-top:20px; margin-bottom:40px" src="extension.png" height="60"><br>
     <div class="row">
-      <p style="width:100%;">With this extension you will be able to store and manage your identities and use it directly into Scrypta dApps Ecosystem.</p>
+      <p style="width:100%;">With this extension you will be able to store and manage your identities and use it directly into BDCash dApps Ecosystem.</p>
     </div>
     <div style="margin-top:20px">
       <b-button id="create-id" variant="primary" v-on:click="showCreateIdentity()">CREATE IDENTITY</b-button>
@@ -15,7 +15,7 @@
 export default {
   data () {
     return {
-      scrypta: window.ScryptaCore,
+      bdcash: window.BDCashCore,
       localStorage: window.localStorage
     }
   },
@@ -30,7 +30,7 @@ export default {
       var tablink
       if(!isFirefox){
         let id = chrome.runtime.id
-        tablink = 'chrome-extension://' + id + '/scrypta/id.html#/import'
+        tablink = 'chrome-extension://' + id + '/bdcash/id.html#/import'
       }else{
         tablink = "./id.html#/import"
       }

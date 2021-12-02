@@ -26,7 +26,7 @@ export default {
       label: '',
       file: '',
       wallet: {},
-      scrypta: window.ScryptaCore,
+      bdcash: window.BDCashCore,
       localStorage: window.localStorage
     }
   },

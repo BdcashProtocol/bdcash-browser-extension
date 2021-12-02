@@ -26,7 +26,7 @@ export default {
   data () {
     return {
       wallets: [],
-      scrypta: window.ScryptaCore,
+      bdcash: window.BDCashCore,
       localStorage: window.localStorage,
     }
   },
@@ -44,7 +44,7 @@ export default {
       var tablink
       if(!isFirefox){
         let id = chrome.runtime.id
-        tablink = 'chrome-extension://' + id + '/scrypta/id.html#/import'
+        tablink = 'chrome-extension://' + id + '/bdcash/id.html#/import'
       }else{
         tablink = "./id.html#/import"
       }

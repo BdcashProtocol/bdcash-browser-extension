@@ -30,7 +30,7 @@ export default {
       dapps: [],
       balance: "-",
       showRealForget: false,
-      scrypta: window.ScryptaCore,
+      bdcash: window.BDCashCore,
       localStorage: window.localStorage,
       axios: axios
     }
@@ -116,8 +116,8 @@ export default {
         dapps = JSON.parse(dapps)
         app.dapps = dapps[app.pubkey]
       }
-      // let node = await app.scrypta.connectNode()
-      let node = "https://idanodejs01.scryptachain.org"
+      // let node = await app.bdcash.connectNode()
+      let node = "https://idanodejs01.bdcashchain.org"
       let response = await app.axios.get(node + "/balance/" + app.pubkey)
       app.balance = response.data.balance 
     }

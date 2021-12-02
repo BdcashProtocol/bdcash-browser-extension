@@ -1,6 +1,6 @@
 {
-  "name": "Scrypta Extension Browser",
-  "description": "Connect to Scrypta Ecosystem directly from your browser.",
+  "name": "BDCash Extension Browser",
+  "description": "Connect to BDCash Ecosystem directly from your browser.",
   "version": "1.1.1",
   "manifest_version": 2,
   "icons": {
@@ -8,26 +8,26 @@
     "128": "icons/icon_128.png"
   },
   "browser_action": {
-    "default_title": "ScryptaID",
-    "default_popup": "scrypta/id.html"
+    "default_title": "BDCashID",
+    "default_popup": "bdcash/id.html"
   },
   "permissions": [
     "storage",
     "activeTab",
-    "*://*.scryptachain.org/*",
+    "*://*.bdcashchain.org/*",
     "*://*.manent.app/*",
-    "*://*.scrypta.id/*",
+    "*://*.bdcash.id/*",
     "*://*.planum.dev/*",
-    "*://*.scrypta.me/*",
+    "*://*.bdcash.me/*",
     "*://*.electio.app/*",
     "*://*.documenta.app/*"
   ],
   "content_scripts" : [{
     "matches" : [ 
-      "*://*.scryptachain.org/*" , 
+      "*://*.bdcashchain.org/*" , 
       "*://*.manent.app/*" , 
-      "*://*.scrypta.id/*", 
-      "*://*.scrypta.me/*", 
+      "*://*.bdcash.id/*", 
+      "*://*.bdcash.me/*", 
       "*://*.planum.dev/*", 
       "*://*.electio.app/*", 
       "*://*.documenta.app/*"
