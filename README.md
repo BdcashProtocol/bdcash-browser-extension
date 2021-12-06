@@ -1,4 +1,4 @@
-# BDCashID
+# BDCash Wallet extension
 <p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://raw.githubusercontent.com/BdcashProtocol/bdcash-mediakit/main/cole%C3%A7%C3%A3o/bdcash-logo-300h.png"/></p>
 
 ### Web browser extension for create and manage BDCashIDs.
