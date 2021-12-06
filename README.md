@@ -5,7 +5,7 @@
 #### Official website:
 #### https://id.bdcashprotocol.com
 
-You will be able to secure create and store multiple BDCashIDs directly from the browser. 
+You will be able to secure create and store multiple IDs BDCash directly from the browser. 
 Keep updated on BDCash Ecosystem thanks to dApp Explorer and easily switch from accounts.
 
 Enjoy!

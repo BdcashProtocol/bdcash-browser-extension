@@ -45,7 +45,7 @@ export default {
   },
   mounted (){
     const app = this
-    var wallets = localStorage.getItem('$LYRA_ids');
+    var wallets = localStorage.getItem('$BDCASH_ids');
     if(wallets !== null && wallets.length > 0){
       app.$router.push('dashboard')
     }

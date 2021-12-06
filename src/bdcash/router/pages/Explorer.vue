@@ -25,29 +25,24 @@ export default {
       dapps: 
       [
         {
-          name: 'Manent',
+          name: 'Web Wallet',
           description: 'Manage you funds and store data.',
-          link: 'web.manent.app'
+          link: 'wallet.bdcashprotocol.com'
         },
         {
-          name: 'Me',
+          name: 'ID BDcash Platform',
           description: 'Connect third party identities.',
-          link: 'me.bdcash.id'
+          link: 'id.bdcashprotocol.com'
         },
         {
-          name: 'Planum',
+          name: 'Chains Platforms',
           description: 'Create tokens with few clicks.',
-          link: 'planum.dev'
+          link: 'devs.bdcashprotocol.com'
         },
         {
-          name: 'Electio',
-          description: 'Polls over the blockchain.',
-          link: 'electio.app'
-        },
-        {
-          name: 'News',
-          description: 'Decentralized News Feed.',
-          link: 'news.bdcashchain.org'
+          name: 'Website Official',
+          description: 'Learn more about Project.',
+          link: 'bdcashprotocol.com'
         }
       ]
     }

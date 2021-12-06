@@ -40,8 +40,8 @@ export default {
             reader.onload = function() {
                 var dataKey = reader.result;
                 app.wallet[app.label] = dataKey
-                app.localStorage.setItem('$LYRA_ids', JSON.stringify(app.wallet) );
-                app.localStorage.setItem('$LYRA_lastid', app.label );
+                app.localStorage.setItem('$BDCASH_ids', JSON.stringify(app.wallet) );
+                app.localStorage.setItem('$BDCASH_lastid', app.label );
                 window.close()
             };
             reader.readAsText(file);
@@ -53,7 +53,7 @@ export default {
   },
   mounted (){
     const app = this
-    var wallets = localStorage.getItem('$LYRA_ids');
+    var wallets = localStorage.getItem('$BDCASH_ids');
     if(wallets === null || wallets.length === 0){
       app.label = 'Identity 1';
       app.wallet = {};

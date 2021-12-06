@@ -4,34 +4,28 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "icons": {
-    "48": "icons/icon_48.png",
-    "128": "icons/icon_128.png"
+    "48": "icons/bdcash_48.png",
+    "128": "icons/bdcash_128.png"
   },
   "browser_action": {
-    "default_title": "BDCashID",
+    "default_title": "ID BDCash",
     "default_popup": "bdcash/id.html"
   },
   "permissions": [
     "storage",
     "activeTab",
-    "*://*.bdcashchain.org/*",
-    "*://*.manent.app/*",
-    "*://*.bdcash.id/*",
-    "*://*.planum.dev/*",
-    "*://*.bdcash.me/*",
-    "*://*.electio.app/*",
-    "*://*.documenta.app/*"
+    "*://*.bdcashprotocol.com/*",
+    "*://*.wallet.bdcashprotocol.com/*",
+    "*://*.id.bdcashprptocol.com/*",
+    "*://*.devs.bdcashprotocol.com/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "*://*.bdcashchain.org/*",
-        "*://*.manent.app/*",
-        "*://*.bdcash.id/*",
-        "*://*.bdcash.me/*",
-        "*://*.planum.dev/*",
-        "*://*.electio.app/*",
-        "*://*.documenta.app/*"
+        "*://*.bdcashprotocol.com/*",
+        "*://*.wallet.bdcashprotocol.com/*",
+        "*://*.id.bdcashprptocol.com/*",
+        "*://*.devs.bdcashprotocol.com/*"
       ],
       "js": [
         "storage.js"

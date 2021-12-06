@@ -58,13 +58,13 @@ export default {
     },
     useIdentity(label){
       const app = this
-      app.localStorage.setItem('$LYRA_lastid', label)
+      app.localStorage.setItem('$BDCASH_lastid', label)
       app.$router.push('dashboard')
     }
   },
   mounted (){
     const app = this
-    var wallets = localStorage.getItem('$LYRA_ids');
+    var wallets = localStorage.getItem('$BDCASH_ids');
     wallets = JSON.parse(wallets);
     if(wallets === null || wallets.length === 0){
       app.$router.push('index')

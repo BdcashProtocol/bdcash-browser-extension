@@ -42,8 +42,8 @@ export default {
             let exp = response.walletstore.split(':')
             let node = await this.bdcash.connectNode();
             app.axios.post(node + '/init', {address: exp[0]})
-            app.localStorage.setItem('$LYRA_ids', JSON.stringify(app.wallet) );
-            app.localStorage.setItem('$LYRA_lastid', app.label );
+            app.localStorage.setItem('$BDCASH_ids', JSON.stringify(app.wallet) );
+            app.localStorage.setItem('$BDCASH_lastid', app.label );
             app.$router.push('dashboard');
             app.$emit("onCreatedKey");
           })
@@ -57,7 +57,7 @@ export default {
   },
   mounted (){
     const app = this
-    var wallets = localStorage.getItem('$LYRA_ids');
+    var wallets = localStorage.getItem('$BDCASH_ids');
     if(wallets === null || wallets.length === 0){
       app.label = 'Identity 1';
       app.wallet = {};

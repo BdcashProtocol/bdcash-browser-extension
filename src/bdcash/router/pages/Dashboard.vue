@@ -6,14 +6,14 @@
       {{ pubkey.substr(0,4) }}...{{ pubkey.substr(-4) }}
       <div style="position:absolute; top:0; right:0; text-align:right; width:150px;">
         <strong>Balance</strong><br>
-        {{ balance }} LYRA
+        {{ balance }} BDCASH
       </div>
     </div>
-    <b-button style="width:100%; font-size:50px; margin-top:15px" variant="primary" v-on:click="useIdentity">USE THIS<br>IDENTITY</b-button>
+    <b-button style="width:100%; font-size:50px; margin-top:15px" variant="success" v-on:click="useIdentity">USE THIS<br>IDENTITY</b-button>
     <hr>
     <b-button v-if="!showRealForget" style="width:100%; margin-top:0px" variant="warning" v-on:click="forgetIdentityConfirm">FORGET IDENTITY</b-button>
     <b-button v-if="showRealForget" style="width:100%; margin-top:10px" variant="danger" v-on:click="forgetIdentity">I'M 100% SURE, DESTROY ID</b-button>
-    <b-button style="width:100%; margin-top:10px" variant="success" v-on:click="downloadWallet">BACKUP .SID FILE</b-button>
+    <b-button style="width:100%; margin-top:10px" variant="default" v-on:click="downloadWallet">BACKUP .SID FILE</b-button>
     <a id="downloadsid" style="display:none"></a>
   </div>
 </template>
@@ -45,7 +45,7 @@ export default {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.sendMessage(tabs[0].id, {injectID: app.pubkey+':'+app.wallet}, function(response) {
           if(response){
-            var dapps = localStorage.getItem('$LYRA_dapps');
+            var dapps = localStorage.getItem('$BDCASH_dapps');
             if(dapps !== null){
               dapps = JSON.parse(dapps)
             }else{
@@ -57,7 +57,7 @@ export default {
             if(dapps[app.pubkey].indexOf(response) === -1){
               dapps[app.pubkey].push(response)
             }
-            app.localStorage.setItem('$LYRA_dapps', JSON.stringify(dapps))
+            app.localStorage.setItem('$BDCASH_dapps', JSON.stringify(dapps))
             app.dapps = dapps[app.pubkey]
           }
         });
@@ -69,13 +69,13 @@ export default {
     },
     forgetIdentity(){
       const app = this
-      var wallets = localStorage.getItem('$LYRA_ids');
+      var wallets = localStorage.getItem('$BDCASH_ids');
       wallets = JSON.parse(wallets)
       delete wallets[app.label]
-      app.localStorage.setItem('$LYRA_ids', JSON.stringify(wallets))
+      app.localStorage.setItem('$BDCASH_ids', JSON.stringify(wallets))
       app.showRealForget = false
       for(var key in wallets){
-        app.localStorage.setItem('$LYRA_lastid', key );
+        app.localStorage.setItem('$BDCASH_lastid', key );
       }
       app.$router.push('manage')
     },
@@ -101,23 +101,23 @@ export default {
   },
   async mounted (){
     const app = this
-    var wallet = localStorage.getItem('$LYRA_ids');
+    var wallet = localStorage.getItem('$BDCASH_ids');
     wallet = JSON.parse(wallet);
     if(wallet === null || wallet.length === 0){
       app.$router.push('index')
     }else{
-      var last = localStorage.getItem('$LYRA_lastid');
+      var last = localStorage.getItem('$BDCASH_lastid');
       app.label = last
       var split = wallet[last].split(':')
       app.pubkey = split[0]
       app.wallet = split[1]
-      var dapps = localStorage.getItem('$LYRA_dapps');
+      var dapps = localStorage.getItem('$BDCASH_dapps');
       if(dapps !== null){
         dapps = JSON.parse(dapps)
         app.dapps = dapps[app.pubkey]
       }
       // let node = await app.bdcash.connectNode()
-      let node = "https://idanodejs01.bdcashchain.org"
+      let node = "http://nodesh01.bdcashprotocol.com"
       let response = await app.axios.get(node + "/balance/" + app.pubkey)
       app.balance = response.data.balance 
     }

@@ -4,10 +4,10 @@
     <router-view v-on:onCreatedKey="showBarEmit" ></router-view>
     <div v-if="showbar" class="bottombar">
       <div v-on:click="showDappExplorer()" class="buttonbar">
-        dApp Explorer
+        dApps Explorer
       </div>
       <div v-on:click="showChangeID()" class="buttonbar">
-          Manage IDs
+          Create / Manage IDs
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@ export default {
     const app = this
     app.id = chrome.runtime.id
     app.openlink = 'moz-extension://' + app.id + '/bdcash/id.html'
-    var wallet = localStorage.getItem('$LYRA_ids');
+    var wallet = localStorage.getItem('$BDCASH_ids');
     if(wallet === null || wallet.length === 0){
       app.showbar = false
     }else{
@@ -60,7 +60,7 @@ export default {
     font-family: 'Poppins', sans-serif;
   }
   #open{
-    color:#666;
+    color:rgb(2, 2, 2);
     width:15px;
     height:15px;
     position:fixed;
@@ -96,7 +96,7 @@ export default {
     cursor:pointer;
   }
   a{
-    color:#d43f51!important
+    color:#d4b70e!important
   }
   .arrow{
     position:absolute; 
