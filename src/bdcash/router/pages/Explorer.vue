@@ -32,7 +32,7 @@ export default {
         {
           name: 'ID BDcash Platform',
           description: 'Connect third party identities.',
-          link: 'id.bdcashprotocol.com'
+          link: 'idbdcash.bdcashprotocol.com'
         },
         {
           name: 'Chains Platforms',

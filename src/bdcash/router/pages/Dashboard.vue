@@ -117,7 +117,7 @@ export default {
         app.dapps = dapps[app.pubkey]
       }
       // let node = await app.bdcash.connectNode()
-      let node = "http://nodesh01.bdcashprotocol.com"
+      let node = "https://nodesh01.bdcashprotocol.com"
       let response = await app.axios.get(node + "/balance/" + app.pubkey)
       app.balance = response.data.balance 
     }

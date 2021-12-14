@@ -96,7 +96,7 @@ export default {
     cursor:pointer;
   }
   a{
-    color:#d4b70e!important
+    color:#e4c40d!important
   }
   .arrow{
     position:absolute; 

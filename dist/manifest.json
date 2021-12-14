@@ -16,7 +16,8 @@
     "activeTab",
     "*://*.bdcashprotocol.com/*",
     "*://*.wallet.bdcashprotocol.com/*",
-    "*://*.id.bdcashprptocol.com/*",
+    "*://*.idbdcash.bdcashprptocol.com/*",
+    "*://*.playground.bdcashprptocol.com/*",
     "*://*.devs.bdcashprotocol.com/*"
   ],
   "content_scripts": [
@@ -24,7 +25,8 @@
       "matches": [
         "*://*.bdcashprotocol.com/*",
         "*://*.wallet.bdcashprotocol.com/*",
-        "*://*.id.bdcashprptocol.com/*",
+        "*://*.idbdcash.bdcashprptocol.com/*",
+        "*://*.playground.bdcashprptocol.com/*",
         "*://*.devs.bdcashprotocol.com/*"
       ],
       "js": [
