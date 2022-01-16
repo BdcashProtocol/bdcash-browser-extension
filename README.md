@@ -3,10 +3,6 @@
 
 ### Web browser extension for create and manage IDs BDCash.
 #### Official websites:
-#### https://extensions.bdcashprotocol.com
-
-or get link download in
-
 ### https://bdcashprotocol.com/download
 
 You will be able to secure create and store multiple IDs BDCash directly from the browser. 
