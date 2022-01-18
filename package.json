@@ -1,8 +1,8 @@
 {
   "name": "bdcash-id-extension",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "Connect to BDCash Ecosystem directly from your browser.",
-  "author": "BDCash Foundation",
+  "author": "BDCash Protocol",
   "license": "MIT",
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
@@ -32,7 +32,7 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^4.5.3",
-    "core-js": "^3.19.2",
+    "core-js": "^2.6.12",
     "cross-env": "^5.2.1",
     "css-loader": "^3.2.0",
     "ejs": "^2.7.1",

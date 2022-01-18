@@ -20,14 +20,18 @@
     "*://*.playground.bdcashprptocol.com/*",
     "*://*.devs.bdcashprotocol.com/*"
   ],
-  "content_scripts" : [{
-    "matches" : [ 
-      "*://*.bdcashprotocol.com/*",
-      "*://*.web.bdcashprotocol.com/*",
-      "*://*.id.bdcashprptocol.com/*",
-      "*://*.playground.bdcashprptocol.com/*",
-      "*://*.devs.bdcashprotocol.com/*"
-    ],
-    "js" : ["storage.js"]
-  }]
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bdcashprotocol.com/*",
+        "*://*.web.bdcashprotocol.com/*",
+        "*://*.id.bdcashprptocol.com/*",
+        "*://*.playground.bdcashprptocol.com/*",
+        "*://*.devs.bdcashprotocol.com/*"
+      ],
+      "js": [
+        "storage.js"
+      ]
+    }
+  ]
 }

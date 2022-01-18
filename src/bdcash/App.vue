@@ -7,7 +7,7 @@
         dApps Explorer
       </div>
       <div v-on:click="showChangeID()" class="buttonbar">
-          Create / Manage IDs
+          Create / Manage Identities
       </div>
     </div>
   </div>
@@ -83,7 +83,7 @@ export default {
     width:100%;
     text-align:center;
     padding:0 0 10px 0;
-    border-bottom:1px solid #ccc
+    border-bottom:1px solid rgb(247, 223, 14)
   }
   .back{
     position:absolute; 
@@ -92,11 +92,11 @@ export default {
     left:20px;
   }
   .back:hover{
-    color:#000;
+    color:rgb(110, 108, 69);
     cursor:pointer;
   }
   a{
-    color:#e4c40d!important
+    color:#000000!important
   }
   .arrow{
     position:absolute; 
@@ -112,8 +112,8 @@ export default {
     left:0;
     width:100%;
     padding:0 15px;
-    border-top:1px solid #ccc;
-    background:#fff;
+    border-top:1px solid rgba(0, 0, 0, 0.952);
+    background:rgb(238, 184, 8);
     z-index:99;
   }
   .buttonbar{

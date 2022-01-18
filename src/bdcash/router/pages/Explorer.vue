@@ -27,12 +27,12 @@ export default {
         {
           name: 'Web Wallet',
           description: 'Manage you funds and store data.',
-          link: 'wallet.bdcashprotocol.com'
+          link: 'web.bdcashprotocol.com'
         },
         {
           name: 'ID BDcash Platform',
           description: 'Connect third party identities.',
-          link: 'idbdcash.bdcashprotocol.com'
+          link: 'id.bdcashprotocol.com'
         },
         {
           name: 'Chains Platforms',
