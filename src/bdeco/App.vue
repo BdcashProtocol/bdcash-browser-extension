@@ -25,7 +25,7 @@ export default {
   mounted (){
     const app = this
     app.id = chrome.runtime.id
-    app.openlink = 'moz-extension://' + app.id + '/bdcash/id.html'
+    app.openlink = 'moz-extension://' + app.id + '/bdeco/id.html'
     var wallet = localStorage.getItem('$BDCASH_ids');
     if(wallet === null || wallet.length === 0){
       app.showbar = false
@@ -51,6 +51,8 @@ export default {
 </script>
 <style>
   #app{
+    background: #0c0613;
+    color: #ffffff;
     min-width:350px;
     width: 100%;
     min-height: 300px;
@@ -60,7 +62,7 @@ export default {
     font-family: 'Poppins', sans-serif;
   }
   #open{
-    color:rgb(2, 2, 2);
+    color:#5523a7;
     width:15px;
     height:15px;
     position:fixed;
@@ -79,24 +81,25 @@ export default {
     text-align:center;
   }
   .header{
+    color:#ffffff;
     font-size:12px; 
     width:100%;
     text-align:center;
     padding:0 0 10px 0;
-    border-bottom:1px solid rgb(247, 223, 14)
+    border-bottom:1px solid #7222cc;
   }
   .back{
     position:absolute; 
     top:20px; 
-    color:#666; 
+    color:rgb(105, 9, 170); 
     left:20px;
   }
   .back:hover{
-    color:rgb(110, 108, 69);
+    color:rgb(172, 68, 233);
     cursor:pointer;
   }
   a{
-    color:#000000!important
+    color:#4a0b7e!important
   }
   .arrow{
     position:absolute; 
@@ -112,8 +115,8 @@ export default {
     left:0;
     width:100%;
     padding:0 15px;
-    border-top:1px solid rgba(0, 0, 0, 0.952);
-    background:rgb(238, 184, 8);
+    border-top:1px solid rgba(140, 71, 185, 0.952);
+    background:rgb(98, 44, 185);
     z-index:99;
   }
   .buttonbar{

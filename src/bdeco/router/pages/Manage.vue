@@ -44,7 +44,7 @@ export default {
       var tablink
       if(!isFirefox){
         let id = chrome.runtime.id
-        tablink = 'chrome-extension://' + id + '/bdcash/id.html#/import'
+        tablink = 'chrome-extension://' + id + '/bdeco/id.html#/import'
       }else{
         tablink = "./id.html#/import"
       }
@@ -100,11 +100,11 @@ export default {
   .new{
     position:absolute; 
     top:20px; 
-    color:#666; 
+    color:rgb(102, 44, 168)a6d; 
     right:20px;
   }
   .new:hover{
-    color:#000;
+    color:#450a6d;
     cursor:pointer;
   }
 </style>

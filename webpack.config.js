@@ -12,7 +12,7 @@ const config = {
   entry: {
     'background': './background.js',
     'storage': './storage.js',
-    'bdcash/id': './bdcash/id.js'
+    'bdeco/id': './bdeco/id.js'
   },
   output: {
     path: __dirname + '/dist',
@@ -63,7 +63,7 @@ const config = {
     }),
     new CopyWebpackPlugin([
       { from: 'icons', to: 'icons', ignore: ['icon.xcf'] },
-      { from: 'bdcash/id.html', to: 'bdcash/id.html', transform: transformHtml },
+      { from: 'bdeco/id.html', to: 'bdeco/id.html', transform: transformHtml },
       {
         from: 'manifest.json',
         to: 'manifest.json',

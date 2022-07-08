@@ -1,8 +1,8 @@
 {
-  "name": "bdcash-id-extension",
+  "name": "bdeco-id-extension",
   "version": "1.0.0",
-  "description": "Connect to BDCash Ecosystem directly from your browser.",
-  "author": "BDCash Protocol",
+  "description": "Connect to BDCashProtocol Ecosystem directly from your browser.",
+  "author": "BDCashProtocol Ecosystem",
   "license": "MIT",
   "scripts": {
     "lint": "eslint --ext .js,.vue src",

@@ -6,7 +6,7 @@
       {{ pubkey.substr(0,4) }}...{{ pubkey.substr(-4) }}
       <div style="position:absolute; top:0; right:0; text-align:right; width:150px;">
         <strong>Balance</strong><br>
-        {{ balance }} BDCASH
+        {{ balance }} BDECO
       </div>
     </div>
     <b-button style="width:100%; font-size:50px; margin-top:15px" variant="success" v-on:click="useIdentity">USE THIS<br>IDENTITY</b-button>
