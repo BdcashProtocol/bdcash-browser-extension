@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!--<a id="open" :href="openlink" target="_blank"><i class="fas fa-external-link-alt"></i></a>-->
+    <a id="open" :href="openlink" target="_blank"><i class="fas fa-external-link-alt"></i></a>
     <router-view v-on:onCreatedKey="showBarEmit" ></router-view>
     <div v-if="showbar" class="bottombar">
       <div v-on:click="showDappExplorer()" class="buttonbar">

@@ -2,23 +2,28 @@
   "name": "BDCashProtocol Extension Browser",
   "description": "Connect to BDCash Ecosystem directly from your browser.",
   "version": "1.0.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "icons": {
     "48": "icons/bdeco_48.png",
     "128": "icons/bdeco_128.png"
   },
-  "browser_action": {
+  "action": {
     "default_title": "ID BDCashProtocol",
     "default_popup": "bdeco/id.html"
   },
   "permissions": [
     "storage",
-    "activeTab",
-    "*://*.bdcashprotocol.com/*",
-    "*://*.web.bdcashprotocol.com/*",
-    "*://*.id.bdcashprptocol.com/*",
-    "*://*.playground.bdcashprptocol.com/*",
-    "*://*.buildtoken.bdcashprotocol.com/*"
+    "activeTab"
+  ],
+  "host_permissions":[
+    "https://bdcashprotocol.com/*",
+    "https://web.bdcashprotocol.com/*",
+    "https://id.bdcashprptocol.com/*",
+    "https://playground.bdcashprptocol.com/*",
+    "https://buildtoken.bdcashprotocol.com/*"
+  ],
+  "optional_host_permissions": [
+    "*://*/*"
   ],
   "content_scripts" : [{
     "matches" : [ 
